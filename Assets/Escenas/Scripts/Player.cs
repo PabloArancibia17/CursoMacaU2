@@ -8,8 +8,11 @@ public class Player : MonoBehaviour
     float horizontalMovement;
     public float speed = 10;
     public float limitX = 10;
-    public GameObject comida;
+    public GameObject [] comida;
+    int random;
+    int minPrefab = 0, maxPrefab = 3;
 
+   
     void Update()
     {
         #region Movimiento
@@ -29,7 +32,8 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(comida, transform.position, transform.rotation);
+            random = Random.Range(minPrefab, maxPrefab);
+            Instantiate(comida[random], transform.position, transform.rotation);            
         }
     }
 }

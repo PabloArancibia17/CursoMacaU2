@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 8726113543443430030}
   - component: {fileID: 8726113543436175316}
   - component: {fileID: 8726113542357609930}
+  - component: {fileID: 1577580507176576432}
   m_Layer: 0
   m_Name: Animal_Gallina_Blanco
   m_TagString: Untagged
@@ -103,6 +104,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &1577580507176576432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8726113543443524824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564d391fbf3154b489b9673171992b9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limitUp: 0
+  limitDown: 0
 --- !u!1 &8726113543443532970
 GameObject:
   m_ObjectHideFlags: 0

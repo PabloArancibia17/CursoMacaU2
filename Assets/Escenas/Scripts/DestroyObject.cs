@@ -7,6 +7,12 @@ public class DestroyObject : MonoBehaviour
     public float limitUp;
     public float limitDown;
 
+    private void OnTriggerEnter(Collider other)
+    {
+             
+                    
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -15,7 +21,7 @@ public class DestroyObject : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (transform.position.z < -10)
+        if (transform.position.z < -15)
         {
             Destroy(gameObject);
         }
