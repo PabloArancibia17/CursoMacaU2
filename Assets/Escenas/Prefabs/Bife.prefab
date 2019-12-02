@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4245005944126708280}
   - component: {fileID: 1790776650259176586}
   - component: {fileID: 155273604652958159}
+  - component: {fileID: 9177425971342696236}
   m_Layer: 0
   m_Name: Bife
   m_TagString: Food
@@ -92,8 +93,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564d391fbf3154b489b9673171992b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  limitUp: 0
-  limitDown: 0
 --- !u!114 &155273604652958159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,3 +106,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!135 &9177425971342696236
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4245005944128942196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3307556
+  m_Center: {x: 0, y: 0.04279684, z: 0}

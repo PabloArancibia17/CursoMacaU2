@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5371109211042873051}
   - component: {fileID: 3654215110389547299}
   - component: {fileID: -2468199777987782833}
+  - component: {fileID: -5178752413882031539}
   m_Layer: 0
   m_Name: Pescado_Cocido
   m_TagString: Food
@@ -105,5 +106,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564d391fbf3154b489b9673171992b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  limitUp: 0
-  limitDown: 0
+--- !u!135 &-5178752413882031539
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5371109211045357157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.21520275
+  m_Center: {x: 0, y: 0.111486286, z: 0.00342983}
