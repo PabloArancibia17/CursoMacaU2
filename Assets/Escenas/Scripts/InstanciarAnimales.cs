@@ -11,6 +11,7 @@ public class InstanciarAnimales : MonoBehaviour
     public int countAnimals = 1;
     
     
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +21,22 @@ public class InstanciarAnimales : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canInstantiate)
+
+        if (GameController.life > 0)
         {
-            StartCoroutine(InstantiateAnimals());
+            
+            if (canInstantiate == true)
+            {
+                StartCoroutine(InstantiateAnimals());
+            }
+
+
         }
+        else
+        {
+            canInstantiate = false;
+        }
+
     }
 
     bool canInstantiate = true;

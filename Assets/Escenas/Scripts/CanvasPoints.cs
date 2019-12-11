@@ -27,4 +27,5 @@ public class CanvasPoints : MonoBehaviour
             points.text = ("YOU LOSE");
         }
     }
+
 }

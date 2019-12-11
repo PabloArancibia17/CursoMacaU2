@@ -30,7 +30,7 @@ public class DestroyObject : MonoBehaviour
         {
             Destroy(gameObject);
             GameController.life--;
-            Debug.Log("Tengo " + GameController.life + "vidas");
+            Debug.Log("Tengo " + GameController.life + " vidas");
         }
     }
 }
