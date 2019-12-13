@@ -11,12 +11,13 @@ public class DestroyObject : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-        GameController.actualPoints += points;
-        
+        GameController.actualPoints += points;        
         Debug.Log("Mis puntos son " + GameController.actualPoints);
 
-                    
+        
     }
+
+    
 
     // Update is called once per frame
     void Update()

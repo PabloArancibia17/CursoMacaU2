@@ -9,50 +9,30 @@ public class InstanciarAnimales : MonoBehaviour
     public GameObject []animales = new GameObject[2];
     public int maxAnimals;
     public int countAnimals = 1;
+    public int delayOfInstantiate = 3;
     
     
     
     // Start is called before the first frame update
     void Start()
     {
-      
+        InvokeRepeating(nameof(InstantiateObject), 0, delayOfInstantiate);
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (GameController.life > 0)
-        {
-            
-            if (canInstantiate == true)
-            {
-                StartCoroutine(InstantiateAnimals());
-            }
-
-
-        }
-        else
-        {
-            canInstantiate = false;
-        }
+        
 
     }
 
-    bool canInstantiate = true;
-    IEnumerator InstantiateAnimals()
+    void InstantiateObject()
     {
-             
-        Instantiate(animales[Random.Range(0,2)], new Vector3(transform.position.x + Random.Range(-9, 9), transform.position.y, transform.position.z), transform.rotation, transform.parent);
+        Instantiate(animales[Random.Range(0, 2)], new Vector3(transform.position.x + Random.Range(-9, 9), transform.position.y, transform.position.z), transform.rotation, transform.parent);
 
-        canInstantiate = false;
+    }
 
-        yield return new WaitForSeconds(3);
 
-        canInstantiate = true;
-       
-        
-    }  
 
-    
 }
